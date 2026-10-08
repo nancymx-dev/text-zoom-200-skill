@@ -27,3 +27,25 @@ When no project ramp is provided, use full 2× text sizing for the proposed vari
 When a project supplies a custom ramp, inspect what it does, identify differences from full 2×, and show the appropriate separate test. Visual prominence of a large heading is not evidence that it can reach twice its original size.
 
 Keep the public baseline, project preferences, and observed test results distinct. If project guidance conflicts with a criterion, describe the conflict rather than declaring compliance.
+
+## Default product design best practices
+
+Use these as practical starting points when the user has not supplied their own guide. They are design recommendations, not additional WCAG success criteria.
+
+| Area | Default approach | Review |
+| --- | --- | --- |
+| Content and hierarchy | Retain essential wording, labels, values, and reading order. | Enlarged text should not hide an important decision or status. |
+| Text and containers | Use wrapping and content-driven heights. Inspect parent constraints. | Look for overlap, clipping, narrow columns, and text trapped in fixed-height ancestors. |
+| Label-value pairs | Wrap or stack values while keeping their labels associated. | Check long labels, amounts, units, and differing content lengths. |
+| Buttons and controls | Grow controls with their labels; stack adjacent actions when needed. Retain the existing minimum target requirements. | Check all actions remain understandable and reachable. Do not shrink enlarged labels to make them fit. |
+| Forms | Keep labels, entered values, helper text, and errors available. Adapt each field to its editing behaviour. | Include filled, error, disabled, and keyboard-visible states where relevant. |
+| Spacing and styling | Reuse existing spacing tokens, components, colours, and icons. | Adjust layout constraints first; explain any additional style or content changes. |
+| Lists and navigation | Keep selection and navigation understandable. Evaluate height, wrapping, and scroll treatments. | Collapsing groups or changing scroll ownership needs a deliberate interaction decision. |
+| Modals and sheets | Allow sufficient scrolling while keeping essential actions and dismissal accessible. | Check short screens, keyboard appearance, and focus behaviour in implementation. |
+| Copy variation | Try long words, translated text, large values, and multiple lines. | A short sample label is insufficient to establish layout robustness. |
+| Responsive states | Review the actual supported widths and intermediate enlargement settings. | Do not assume a single mobile artboard represents the whole product. |
+| Handoff | Record test method, chosen changes, assumptions, and remaining checks. | A visually successful frame still needs product testing, including reading order, focus, and scroll behaviour. |
+
+For a text-only simulation, font size and line height change while the viewport width stays fixed. Other dimensions follow the project's rules and the needs of the content. There is no universal requirement here to double padding, icon sizes, or target dimensions.
+
+When no project guidance is supplied, explicitly identify these bundled practices as the source in the comparison and handoff. When guidance is supplied, record its name or version and any differences from these defaults.
