@@ -2,7 +2,7 @@
 
 An AI skill for turning 200% text-size design work into a repeatable workflow.
 
-Give your AI assistant default and enlarged views of a screen. The skill guides it to identify layout issues, compare relevant variants, help you choose one, and update a copy in Figma when an authorized editing connection is available. Without editing access, it produces a manual handoff.
+Give your AI assistant default and enlarged views of a screen. The skill guides it to identify layout issues, compare relevant variants, help you choose one, and update a copy in Figma when an authorized editing connection is available.
 
 **Collect → Compare → Choose → Update and review**
 
